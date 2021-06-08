@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Olympics Project</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin="">
+    </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--D3 cdn-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!--test-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+  <!---->
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/bootstrap-slider.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--background-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/slider_style.css">
+  
+
+</head>
+
+<body class='style'>
+<!--
+  <div id="background">
+    <p id="bg-text">1896</p>
+  </div>
+-->
+
+  <!-- Creates the Overall Grid -->
+<!--<div class="container">-->
+
+
+</div>
+    <!-- Row 1 Carousel Slider -->
+    <div class="row" id="logo">
+      
+      <div class='col-md-2'>
+        <div class="thumbnail">
+          <img src="/static/Images/olympics_logo.jpg" class="img-circle" alt="logo">
+          <div class="caption">
+            <h1 style="font-family:optima">Race to Gold</h1>
+            <h2 style="font-family:optima">Trends of the Summer Olympic Games</h2>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-9'>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+           
+              {% for main in range(1,5) %}
+
+              {% set ns = namespace(counter=(main - 1)*7) %}
+
+              {% if (loop.first) %}
+              <div class="carousel-item active">
+                {% else %}
+                <div class="carousel-item">
+                  {% endif%}
+
+                  <div class="cards-wrapper">
+                    {% for inner in range(1,8) %}
+
+                    {% if ns.counter < logo_info|length %} 
+                    {% if (loop.first) %} 
+                    <div class="card">
+                      {% else %}
+                      <div class="card d-none d-md-block">
+                        {% endif%}
+                        <img src="{{ logo_info[ns.counter].Logo_url }}" class="card-img-top"
+                          alt="{{ logo_info[ns.counter].Year }}">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ logo_info[ns.counter].Event }}</h5>
+
+                          <button id="filter-btn" type="button" class="btn btn-default" value='{{ logo_info[ns.counter].Year}}' onclick="findYear(this.value)">{{
+                            logo_info[ns.counter].Year }}</button>
+                          
+                        </div>
+
+                      </div>
+                      {% set ns.counter = ns.counter + 1 %}
+                      {% endif%}
+                      {% endfor %}
+                  </div>
+                </div>
+                {% endfor %}
+           
+
+          </div>
+        
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!--Adding Placeholder to Display Country and Year Selected-->
+    
+    <div class='row'>
+      <div class = "col-md-3  fontcolor">
+        <h2 style="font-family:optima">
+                 
+          <div id= "background">
+          <p id="sel_year" title='Selected Year' style="text-align: center; justify-content: left;">1896</p>
+          </br>
+          <p id= "sel_country" title='Selected Country' style="text-align: center;justify-content: left;"></p>
+          </div>
+        </h2>
+      </div>
+      <div class = "col-md-7">
+        <div id="logo_div"  align="center" > 
+          <p style="justify-content:center;">  </p>
+        </div>
+      </div>
+      <div class = "col-md-2">
+        <button ><a href="{{ url_for('index_func') }}" onclick="findData()" id="dataBtn" >Research Data  </a><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <hr>
+    
+    <!-- Row 2 Circle Map and Gender -->
+    <div class="row" id="second_row">
+      <div class="col-md-6" id="circle">
+        <figure class="highcharts-figure">
+          <div id="container"></div>
+        </figure>
+      </div>
+      
+        
+      <div class= "col-md-6">
+            <!--<div class= "container">-->
+            <div id = "new_bar"> </div>  
+      </div>
+    </div>
+
+    <!-- Row 3 Geo Map   -->
+    <div class = "row">
+          <div class="col-md-12">
+            <div id="map"></div>
+          </div>
+    </div>
+
+    <!-- Row 3 Tables of Country Details, Stacked Bar Chart of Medal, and Male vs. Female Line graph -->
+    <div class="row">
+      <div class="col-md-12" id="line">
+      </div>
+    </div>
+  </div>
+
+
+  <!--content closes here-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+    <!-- Queue JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+      
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <!-- API key -->
+    <script type="text/javascript" src="/static/js/config.js"></script>
+    <!-- Our JS -->
+    <script type="text/javascript" src="/static/js/queue.js"></script>
+    <!--<script type="text/javascript" src="logic.js"></script>-->
+
+    <script type="text/javascript" src="static/js/tableVisualization.js"></script>
+    
+    <script type="text/javascript" src="/static/js/mapVisualization.js"></script>
+    <script type="text/javascript" src="/static/js/bubbleVisualization.js"></script>
+    <script type="text/javascript" src="/static/js/tablePlotVisualization.js"></script>
+    <script type="text/javascript" src="/static/js/genderVisualization.js"></script>
+    <script type="text/javascript" src="static/js/slider.js"></script>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Olympics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/tableStyle.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="OlympicData.html">
+            
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+
+      <div > <p style="text-align:center;">   <img  height="150px" width="400px" src="static/Images/Olym.png"></p> </div>
+      
+      <button><a href="{{ url_for('index') }}" onclick="findData()" id="backButton"> HOME </a></button>
+      <div id= "sel_year" style="text-align: center; font-size: 40px;color:#043fbe;justify-content: center;">
+        <strong>Year</strong>
+      </div>
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Search By</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="season">Season</label>
+                        <select id="selectSeason">
+                          
+                        </select>
+                        
+                        <label for="country">Team</label>
+                        <select  id="selectCountry">
+                          
+                        </select>
+                        
+                        <label for="country">Sport</label>
+                        <select id="selectSport">
+                          
+                        </select>
+
+                        <label for="country">Medal</label>
+                        <select id="selectMedal">
+                          
+                        </select>
+                        
+                        <label for="country">Gender</label>
+                        <select id="selectGender">
+                          
+                        </select>
+                        
+
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped" style="border: 1px solid black;">
+              <thead>
+                <tr >
+                  
+                  <th style="color:#4e5d6c; font-size:12pt;" class="table-head">Player Name</th>
+                  <th style="color:#4e5d6c; font-size:12pt;"  class="table-head">Gender</th>
+                  <th style="color:#4e5d6c; font-size:12pt;"  class="table-head">Team</th>
+                  <th style="color:#4e5d6c; font-size:12pt;"  class="table-head">Code</th>
+                  <th style="color:#4e5d6c; font-size:12pt;"  class="table-head">Games</th>
+                  <th style="color:#4e5d6c; font-size:12pt;"  class="table-head">Year</th>
+                  <th style="color:#4e5d6c; font-size:12pt;"  class="table-head">Season</th>
+                  <th style="color:#4e5d6c; font-size:12pt;" class="table-head">Event City</th>
+                  <th style="color:#4e5d6c; font-size:12pt;" class="table-head">Sport</th>
+                  <th style="color:#4e5d6c; font-size:12pt;" class="table-head">Event</th>
+                  <th style="color:#4e5d6c; font-size:12pt;" class="table-head">Medal</th>
+                  <th style="color:#4e5d6c; font-size:12pt;" class="table-head">Country</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">Olympic Data</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  
+  <script src="static/js/tabularData.js"></script>
+</body>
+
+</html>

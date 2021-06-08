@@ -1,0 +1,207 @@
+
+/*body {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #FFFFCF, #FFDDDD, #cbf3f3, #D9FFDF);
+  background-size: 1200% 1200%;
+  
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}*/
+
+body{
+  background : #d2f0f0;
+}
+
+#background{
+  position:absolute;
+  z-index:0;
+  background:transparent;
+  display:block;
+  min-height:50%; 
+  min-width:50%;
+  color:yellow;
+}
+
+h1{
+  font-size: 40px;
+}
+
+#sel_year
+{
+  color:rgb(155, 148, 148);
+  font-size:50px;
+  /*transform:rotate(300deg);
+  -webkit-transform:rotate(300deg);*/
+}
+
+#sel_country{
+  color:rgb(155, 148, 148);
+  font-size:50px;
+}
+
+#dataBtn{
+  justify-content: left;
+  height: 100px;
+  width: 75px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+#selLogo{
+  align-content: center;
+  width: 200px;
+  height: 150px;
+}
+
+.thumbnail{
+  border: 1px;
+  border-radius: 30px;
+  background-color:transparent;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  
+}
+.card img {
+  padding-left: 15px;
+  padding-top: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: solid 2px;
+  border-radius: 20px;
+  background-color: #a9c9cc;
+  text-align: center;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #363131;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+thead, tbody { display: block; }
+
+tbody {
+    height: 350px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+#table-area th {
+  text-align: center;
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+
+#line{
+  height: 400px;
+}
+
+
+
+/*Bubble styling*/
+.highcharts-figure, .highcharts-data-table table {
+  min-width: 320px; 
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+    font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+#container {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*******/
+
+/**Map styling**/
+#map,
+body,
+html {
+  height: 400px;
+  
+  
+}
+/******/
+
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+
+#new_bar{
+  height: "100%" ;
+}
+
+.bordered {
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding-left: 2%;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.fontcolor{
+  color: #3e76ec;
+}

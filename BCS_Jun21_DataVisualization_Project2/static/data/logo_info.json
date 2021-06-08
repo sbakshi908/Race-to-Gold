@@ -1,0 +1,163 @@
+[{
+  "_id": {
+    "$oid": "60b68332596b311272636ec3"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/athens-olympics-1896-1.jpg",
+  "Year": 1896
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ec4"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/st-louis-olympics-1904-2.jpg",
+  "Year": 1904
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ec5"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/london-olympics-1908-3.jpg",
+  "Year": 1908
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ec6"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/stockholm-olympics-1912-4.jpg",
+  "Year": 1912
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ec7"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/antwerp-olympics-1920-5.jpg",
+  "Year": 1920
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ec8"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/paris-summer-1924-6.gif",
+  "Year": 1924
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ec9"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/amsterdam-olympics-1928-7.jpg",
+  "Year": 1928
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636eca"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/los-angeles-summer-1932-9.gif",
+  "Year": 1932
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ecb"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/berlin-summer-1936-11.gif",
+  "Year": 1936
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ecc"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/london-summer-1948-13.gif",
+  "Year": 1948
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ecd"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/helsinki-summer-1952-15.gif",
+  "Year": 1952
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ece"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/melbourne-stockholm-summer-1956-17.gif",
+  "Year": 1956
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ecf"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/rome-summer-1960-19.gif",
+  "Year": 1960
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed0"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/tokyo-summer-1964-21.gif",
+  "Year": 1964
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed1"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/mexico-summer-1968-23.gif",
+  "Year": 1968
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed2"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/munich-summer-1972-25.gif",
+  "Year": 1972
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed3"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/montreal-summer-1976-27.gif",
+  "Year": 1976
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed4"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/moscow-summer-1980-29.gif",
+  "Year": 1980
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed5"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/los-angeles-summer-1984-31.gif",
+  "Year": 1984
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed6"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/seoul-summer-1988-33.gif",
+  "Year": 1988
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed7"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/barcelona-summer-1992-35.gif",
+  "Year": 1992
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed8"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/atlanta-summer-1996-37.gif",
+  "Year": 1996
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636ed9"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/sydney-summer-2000-39.gif",
+  "Year": 2000
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636eda"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/athens-summer-2004-41.gif",
+  "Year": 2004
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636edb"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/beijing-summer-2008-43.gif",
+  "Year": 2008
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636edc"
+  },
+  "Logo_url": "https://hative.com/wp-content/uploads/2013/11/olympic-logos/london-summer-2012-45.jpg",
+  "Year": 2012
+},{
+  "_id": {
+    "$oid": "60b68332596b311272636edd"
+  },
+  "Logo_url": "https://colorlib.com/wp/wp-content/uploads/sites/2/2014/02/2016_Rio_Summer_Olympics_logo.png",
+  "Year": 2016
+}]
